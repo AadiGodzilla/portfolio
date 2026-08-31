@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>PortFolio</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.ico" />
+  </head>
+  <body bgcolor="" id="container">
+    <div class="header" id="header" style="overflow-y: hidden">
+      <div class="line" id="line"></div>
+      <nav class="navbar" style="overflow-y: hidden">
+        <ul>
+          <a href="#home-container">
+            <li class="profile" id="parentname">
+              <img src="images/signature.png" alt="" />
+              <h4 id="name">AADIKSHAR BHANDARI</h4>
+            </li>
+          </a>
+          <input
+            type="checkbox"
+            name="menu-toggle"
+            id="menu-toggle"
+            class="menu-toggle"
+            style="display: none"
+          />
+          <label for="menu-toggle" style="overflow-y: hidden" id="label">
+            <div class="menu-lines">
+              <div id="icon-line"></div>
+              <div id="icon-line"></div>
+              <div id="icon-line"></div>
+            </div>
+          </label>
+          <li class="contacts" id="parentcontacts">
+            <a href="#contacts-container" id="contacts">CONTACTS</a>
+          </li>
+          <li class="others" id="parentothers">
+            <a id="others" href="#others-container">MORE</a>
+          </li>
+          <li class="projects" id="parentprojects">
+            <a href="#projects-container" id="projects">PROJECTS</a>
+          </li>
+          <li class="about" id="parentabout">
+            <a href="#about-container" id="about">ABOUT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu" id="menu">
+      <li><a href="#about-container" id="menu-about">ABOUT</a></li>
+      <li><a href="#projects-container" id="menu-projects">PROJECTS</a></li>
+      <li><a href="#others-container" id="menu-others">MORE</a></li>
+      <li><a href="#contacts-container" id="menu-contacts">CONTACTS</a></li>
+    </div>
+    <div class="home" id="home-container">
+      <h1>Hi I'm Aadikshar Bhandari</h1>
+      <h3>
+        I am a post class 12 student who is passionate in programming and web
+        development.
+      </h3>
+      <a href="#projects-container"><button>PROJECTS</button></a>
+    </div>
+    <div class="about-container" id="about-container">
+      <h1 class="about-title">About Me</h1>
+      <div class="divider"></div>
+      <div class="bio-container">
+        <div class="biopic-container">
+          <img src="images/biopic.jpg" alt="" class="biopic" />
+        </div>
+        <div class="bio">
+          <p>
+            My name is Aadikshar Bhandari. I am a post Class 12 student from
+            Modern Indian School. I live in Kirtipur, Kathmandu, Nepal.
+          </p>
+          <br />
+          <p>
+            My hobbies are to play video games and do programming as my aim for
+            my career is to become either a software engineer or a web
+            developer.
+          </p>
+          <br />
+          <p>
+            I like to take a walk outside as it helps my mind to be fresh and
+            relaxed whenever I am doing my work and encounter a problem.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="projects-container" id="projects-container">
+      <h1 class="project-title">Projects</h1>
+      <div class="divider"></div>
+      <div class="projects-content-container">
+        <div
+          class="project-content"
+          onclick="
+            window.location.href =
+              'https://github.com/AadiGodzilla/Aadikshar-Electronics-Store'
+          "
+        >
+          <img src="images/project1.png" /> <br />
+          <h3>Aadikshar's Electronic Store</h3>
+          <br />
+          <p>
+            An Online Electronics Ecommerce Platform made with MERN Stack and
+            Tailwind CSS
+          </p>
+        </div>
+        <div
+          class="project-content"
+          onclick="
+            window.location.href =
+              'https://github.com/AadiGodzilla/Result-Processing-System'
+          "
+        >
+          <img src="images/project2.png" /> <br />
+          <h3>Result Processing System</h3>
+          <br />
+          <p>
+            Result Processing and Student Management System for educational
+            institution made with MERN Stack and Tailwind CSS
+          </p>
+        </div>
+        <div
+          class="project-content"
+          onclick="
+            window.location.href =
+              'https://github.com/AadiGodzilla/class-shuffle'
+          "
+        >
+          <img src="images/project3.png" /> <br />
+          <h3>Class Shuffling System</h3>
+          <br />
+          <p>
+            A Class Shuffling System made with tkinter and pandas in python for
+            shuffling students evenly among all section for the next school
+            session
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="others-container" id="others-container">
+      <h1 class="others-title">More About Me</h1>
+      <div class="divider"></div>
+      <div class="others-content-container">
+        <div class="other-content">
+          <img src="images/pandas.png" alt="" />
+          <h4>Python Data Analytics</h4>
+          <br />
+          <p>
+            I have a vast knowledge about python after learning it for 2 years
+          </p>
+          <p>
+            and a decent knowledge about pandas after learning it for one year
+          </p>
+        </div>
+        <div class="other-content" id="other-content">
+          <img src="images/webdev.png" alt="" /> <br />
+          <h4>Web Development</h4>
+          <p>I have a good understanding and knowledge on web development</p>
+          <p>both frontend and backend</p>
+        </div>
+      </div>
+    </div>
+    <div class="contacts-container" id="contacts-container">
+      <h1 class="contacts-title">Contacts</h1>
+      <div class="divider"></div>
+      <p>
+        Here are my social media links you can contact me whenever you like.
+      </p>
+      <p>GoodBye and Peace!</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/aadikshar.bhandari"
+          ><img src="images/facebook.svg" alt=""
+        /></a>
+        <a href="https://twitter.com/anjanbhandari8"
+          ><img src="images/twitter.svg" alt=""
+        /></a>
+        <a href="https://www.instagram.com/aadigodzilla777/"
+          ><img src="images/instagram.svg" alt=""
+        /></a>
+      </div>
+      <p>Email: bhandari.anjan@gmail.com</p>
+      <p>Mobile No.: +977 9849531455</p>
+    </div>
+  </body>
+  <script>
+    function colorChange(text) {
+      text.style.color = "white";
+    }
+
+    function resetColor(text) {
+      text.style.color = "rgba(255, 255, 255, 0.6)";
+    }
+  </script>
+  <script src="scripts/script.js"></script>
+</html>

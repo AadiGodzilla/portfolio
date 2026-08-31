@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+  border: 1px solid rgba(0, 0, 0, 0.247);
+  overflow-y: hidden;
+}
+
+.navbar {
+  position: relative;
+  width: 85%;
+  left: 50%;
+  padding-top: 5px;
+  padding-left: 1500px;
+  padding-right: 1500px;
+  transform: translateX(-50%);
+  display: inline-block;
+  transition: all 1s;
+}
+
+.profile {
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.contacts,
+.others,
+.projects,
+.about {
+  display: inline-block;
+  position: relative;
+  margin: 17px;
+  padding: 5px;
+  float: right;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.contacts::after,
+.about::after,
+.others::after,
+.profile::after,
+.projects::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 121, 94);
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+
+.contacts:hover::after,
+.about:hover::after,
+.others:hover::after,
+.profile:hover::after,
+.projects:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+img {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+
+h4 {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px;
+  float: left;
+}
+
+.line {
+  position: relative;
+  top: 4px;
+  height: 1px;
+  width: 85%;
+  left: 50%;
+  background-color: rgb(36, 36, 36);
+  transform: translateX(-50%);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  padding: 5px;
+  color: rgba(255, 255, 255, 0.623);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.home {
+  background-color: black;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home > h1,
+.home > h3 {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  text-align: center;
+  position: relative;
+  top: 40%;
+  color: white;
+}
+
+.home > h1 {
+  padding-bottom: 40px;
+  color: rgb(0, 121, 94);
+}
+
+.home > a > button {
+  font-size: 20px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 180px;
+  height: 60px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  transition: 0.4s;
+}
+
+.home > a > button:hover,
+.home > a > button:active {
+  border-color: rgb(0, 121, 94);
+  color: white;
+  background-color: rgb(0, 121, 94);
+}
+
+.about-container {
+  background-color: white;
+  position: relative;
+  top: 0vh;
+  padding-bottom: 60px;
+  width: 100vw;
+  overflow-y: hidden;
+}
+
+.about-title,
+.project-title,
+.others-title,
+.contacts-title {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  position: relative;
+  top: 20%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.divider {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 25%;
+  height: 3px;
+  width: 60px;
+  margin-bottom: 40px;
+  background-color: rgba(155, 155, 155, 0.5);
+}
+
+.bio-container {
+  position: relative;
+  display: block;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  overflow-y: hidden;
+}
+
+.bio-container > div {
+  display: block;
+  position: relative;
+  top: 50%;
+}
+
+.biopic-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 40px;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.biopic {
+  width: 100%;
+  height: 100%;
+}
+
+.bio {
+  position: relative;
+  padding: 20px;
+  display: block;
+  width: 100%;
+  bottom: 20px;
+}
+
+.bio > p {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  width: 50%;
+  color: grey;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 10px;
+}
+
+.projects-container {
+  position: relative;
+  width: 100vw;
+  top: 0vh;
+  background-color: #eaeaea;
+}
+
+.projects-content-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  padding: 20px;
+}
+
+.project-content {
+  width: fit-content;
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  cursor: pointer;
+  transition: 400ms;
+  flex: 1;
+}
+
+.project-content:hover {
+  transform: translateY(-20px);
+}
+
+.project-content > img {
+  width: 100%;
+  height: 320px;
+  border-radius: 0px;
+}
+
+.project-content > h3 {
+  position: relative;
+  padding-top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  text-align: center;
+}
+
+.project-content > p {
+  position: relative;
+  white-space: pre-line;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: grey;
+}
+
+.others-content-container {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.other-content {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.other-content > img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.other-content > h4 {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-left: 0px;
+  text-align: center;
+}
+
+.other-content > p {
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: grey;
+}
+
+.contacts-container {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  width: 100vw;
+  padding-bottom: 30px;
+  background-color: rgb(235, 234, 232);
+}
+
+.contacts-container > p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-style: italic;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.socials > a {
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 100%;
+  transition: 0.4s;
+}
+
+.socials > a:hover {
+  background-color: rgb(0, 121, 94);
+}
+
+.socials > img {
+  color: white;
+}
+
+.menu-toggle {
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  overflow-y: hidden;
+}
+
+label {
+  display: inline-block;
+  position: relative;
+  float: right;
+  margin: 20px;
+  z-index: 100;
+}
+
+.menu-lines {
+  width: 20px;
+  height: 20px;
+  display: block;
+  overflow-y: hidden;
+}
+
+.menu-lines > div {
+  width: 20px;
+  height: 2px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  overflow-y: hidden;
+  background-color: white;
+}
+
+.menu {
+  background-color: black;
+  position: fixed;
+  z-index: 20;
+  top: 71px;
+  width: 100vw;
+  height: 0;
+  display: flex;
+  transition: 0.4s ease;
+  flex-direction: column;
+}
+
+.menu > li {
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+  padding: 0px;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.menu > li > a {
+  display: block;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.menu > li > a:active {
+  background-color: rgb(0, 121, 94);
+}
+
+@media (min-width: 800px) {
+  .menu-toggle,
+  .menu,
+  .menu-lines {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .projects,
+  .about,
+  .contacts,
+  .others {
+    display: none;
+  }
+
+  .bio > p {
+    text-align: left;
+    display: block;
+    width: 97vw;
+    position: relative;
+    top: 20px;
+    left: 45vw;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .profile {
+    position: relative;
+    top: 5px;
+    left: 0px;
+    float: left;
+    margin-left: 20px;
+  }
+
+  .profile > h4 {
+    font-size: 15px;
+  }
+
+  .profile > img {
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+  }
+}
+
+#name,
+#about,
+#contacts,
+#others,
+#projects,
+#header {
+  transition: all 0.3s;
+}
